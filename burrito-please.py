@@ -35,8 +35,12 @@ try:
     suggestion_input.click()
     print("Entering 59901")
     suggestion_input.send_keys("59901")
+
+    print("Waiting for browser to think I'm people")
+    time.sleep(3)
+
     suggestion_input.send_keys(Keys.ENTER)
 
-    print("Entry complete")
+    print("Entry complete, burrito requested!")
 finally:
     browser.close()
